@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Attributes Practice</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 60%;
+        }
+        th,td{
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        table{
+            border-spacing: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2> Student Report Table</h2>
+     
+    <table>
+        <!--header row-->
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Mark</th>
+        </tr>
+        <tr>
+            <th>Math</th>
+            <th>Science</th>
+        </tr>
+        <!--data rows-->
+        <tr>
+            <td>Alice</td>
+            <td>90</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>Bob</td>
+            <td colspan="2">Absent</td>
+        </tr>
+        <tr>
+            <td>Kishore</td>
+            <td>95</td>
+            <td>98</td>
+        </tr>
+
+    </table>
+</body>
+</html>
