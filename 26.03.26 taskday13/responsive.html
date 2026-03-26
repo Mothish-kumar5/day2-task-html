@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 80;
+            max-width:600px;
+            margin: 2px auto;
+            padding: 20px;
+            background-color: aquamarine;
+            border: 2px solid black;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+        h1{
+            font-size: clamp(42px,5vw,6px);
+            text-align: center;
+        }
+        body{
+            background-color: white;
+            font-family: arial, sans-serif;
+        }
+        @media (max-width:768px){
+            body{
+                background-color: lightblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsive Heading</h1>
+    <div class="box">
+        <p>
+            This paragraph uses <strong>1.5 rem</strong>, so it scales based on the root font size.
+            The box is responsive (80% width but max 600px), and the heading scales using viewport width.
+
+</p>
+    </div>
+</body>
+</html>
