@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Demo</title>
+<script>
+        // Single-line comment: This prints Hello JS
+        console.log("Hello JS");
+
+        /* Multi-line comment:
+           Logging name and age
+        */
+        console.log("Name: John Doe");
+        console.log("Age: 22");
+
+        // Print Hello JS in the webpage
+        function showMessage() {
+            document.getElementById("message").innerText = "Hello JS";
+        }
+    </script>
+
+    <style>
+        /* KKR Jersey Color Theme (Purple & Gold) */
+        body {
+            background-color: purple;
+            color: gold;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+        }
+
+        /* CSK Jersey Color Theme (Yellow) */
+        .box {
+            background-color: yellow;
+            color: black;
+            padding: 30px;
+            margin: 20px auto;
+            width: 200px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body onload="showMessage()">
+
+    <h1 id="message"></h1>
+
+    <div class="box">
+        CSK
+    </div>
+
+    
+</body>
+</html>
