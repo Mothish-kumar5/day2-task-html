@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Open Console to See Output</h2>
+
+<script>
+// 1. Variable Declarations
+var userName = "John";     
+let userAge = 25;          
+const isStudent = true;    
+
+// 2. Data Types
+let myString = "Hello World";  
+let myNumber = 100;            
+let myBoolean = false;         
+let myNull = null;             
+let myUndefined;               
+
+// 3. Arithmetic Operators
+let a = 10;
+let b = 5;
+
+console.log("Addition:", a + b);        
+console.log("Subtraction:", a - b);     
+console.log("Multiplication:", a * b);  
+console.log("Division:", a / b);        
+console.log("Modulus:", a % b);         
+
+// 4. Comparison Operators
+console.log("a == '10':", a == "10");    
+console.log("a === '10':", a === "10");  
+
+// 5. Logical Operators
+let x = true;
+let y = false;
+
+console.log("x && y:", x && y);  
+console.log("x || y:", x || y);  
+
+// 6. Function
+function checkUser(name, age, isStudent) {
+    if (age >= 18 && isStudent === true) {
+        console.log(name + " is an adult student.");
+    } else if (age >= 18 || isStudent === false) {
+        console.log(name + " is an adult but not a student.");
+    } else {
+        console.log(name + " is under 18.");
+    }
+}
+
+// Calling the function
+checkUser("John", 20, true);
+checkUser("Sam", 22, false);
+checkUser("Tom", 15, true);
+
+</script>
+</body>
+</html>
