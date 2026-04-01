@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jack Sparrow</title>
+     <style>
+        body{
+            background: linear-gradient(To right,lightblue,gray,blueviolet);
+            
+    
+        }
+        h1{
+            text-transform:capitalize;
+            color: crimson;
+        }
+        ul{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: darkslategrey;
+            font-style:italic;
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            border-color: rgb(202, 120, 13);
+            background-color:lightsalmon;
+            margin: 10px;
+            padding: 20px;  
+            list-style: none; 
+             
+        }
+        li{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <h2>Caption Sparrow Team</h2>
+    <div id="boat">
+      <ul id="crew">
+        <li>Jack</li>
+        <li>Alice</li>
+        <li>Bob</li>
+        <li>Emma</li>
+      </ul>
+    </div>
+    <br>
+    <button onclick="showJackRoute()">Ask Jack</button>
+    <button onclick="showAliceRoute()">Ask Alice</button>
+    <p id="routeOutPut"></p>
+    <script>
+        function showJackRoute() {
+            document.getElementById("routeOutPut").innerText =
+            "Jack says: Take the north route across the island!"; 
+        }
+        function showAliceRoute() {
+            document.getElementById("routeOutPut").innerText =
+                "Alice says: Follow the river and head east!";
+        }
+
+        /*function showTheRoute(){
+                if(name === "Jack"){
+                console.log(name + 'directing to take North');
+            }
+            else{
+                console.log(name + 'directing to take south');
+            }
+        }*/
+    </script>
+  </body>
+</html>
