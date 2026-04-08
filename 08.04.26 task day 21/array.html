@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Open the console to see results</h1>
+
+  <script>
+    //Double all numbers using map
+    let arr1 = [1, 2, 3, 4];
+    let doubled = arr1.map(num => num * 2);
+    console.log("Doubled:", doubled);
+
+    //Get even numbers using filter
+    let arr2 = [1, 2, 3, 4, 5, 6];
+    let evens = arr2.filter(num => num % 2 === 0);
+    console.log("Evens:", evens);
+
+    //Find sum using reduce
+    let arr3 = [1, 2, 3, 4];
+    let sum = arr3.reduce((total, num) => total + num, 0);
+    console.log("Sum:", sum);
+
+    //Find the first number greater than 10
+    let arr4 = [5, 8, 12, 3, 20];
+    let firstGreaterThan10 = arr4.find(num => num > 10);
+    console.log("First > 10:", firstGreaterThan10);
+
+    //Check if array includes a specific value
+    let arr5 = [1, 2, 3, 4];
+    let hasValue = arr5.includes(3);
+    console.log("Includes 3:", hasValue);
+  </script>
+</body>
+</html>
