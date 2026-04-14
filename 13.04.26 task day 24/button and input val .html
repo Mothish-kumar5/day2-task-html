@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nameInput" placeholder="Enter name">
+<button id="showBtn">Show Value</button>
+
+<script>
+  let btn = document.getElementById("showBtn");
+  let nameInput = document.getElementById("nameInput");
+
+  btn.addEventListener("click", function() {
+    alert("You entered: " + nameInput.value);
+  });
+</script>
+</body>
+</html>
