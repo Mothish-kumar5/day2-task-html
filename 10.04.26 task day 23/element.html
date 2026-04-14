@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+  <!-- Element for text change -->
+  <p id="demo">Old Text</p>
+
+  <!-- Element for style change -->
+  <p id="text">Hello World</p>
+
+  <!-- Paragraph content change -->
+  <p id="para">Original paragraph</p>
+
+  <!-- Element for color & font size -->
+  <p id="styleText">Styled Text</p>
+
+  <button onclick="changeAll()">Click Me</button>
+
+  <script>
+    function changeAll() {
+      // 1. Change text using getElementById
+      document.getElementById("demo").innerHTML = "New Text";
+
+      // 2. Change style of an element
+      let element = document.getElementById("text");
+      element.style.backgroundColor = "yellow";
+      element.style.padding = "10px";
+
+      // 3. Change paragraph content
+      document.getElementById("para").textContent = "Updated paragraph content";
+
+      // 4. Change color and font size
+      let el = document.getElementById("styleText");
+      el.style.color = "blue";
+      el.style.fontSize = "24px";
+    }
+  </script>
+
+</body>
+</html>
