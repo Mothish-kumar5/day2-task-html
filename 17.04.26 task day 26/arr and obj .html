@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Destructuring, Spread & Rest Demo</h2>
+
+<script>
+  // 1. Rest Operator (function arguments)
+  function sum(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+  }
+
+  console.log("Sum:", sum(1, 2, 3, 4));
+
+  //  2. Spread Operator (copy array)
+  const original = [10, 20, 30];
+  const copy = [...original];
+
+  console.log("Original:", original);
+  console.log("Copy:", copy);
+
+  //  3. Destructuring
+  const arr = [100, 200, 300];
+  const [a, b, c] = arr;
+
+  console.log("Destructured:", a, b, c);
+
+  //  Combined Example
+  function processNumbers(...nums) {
+    const copied = [...nums];
+    const [first, second, ...rest] = copied;
+
+    return { first, second, rest };
+  }
+
+  console.log("Combined:", processNumbers(5, 10, 15, 20));
+</script>
+</body>
+</html>
