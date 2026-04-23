@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Synchronous vs Asynchronous Execution</h2>
+
+<button onclick="runSync()">Run Synchronous</button>
+<button onclick="runAsync()">Run Asynchronous</button>
+
+<pre id="output"></pre>
+
+<script>
+  let output = document.getElementById("output");
+
+  function log(msg) {
+    output.textContent += msg + "\n";
+  }
+
+  function clearLog() {
+    output.textContent = "";
+  }
+
+  function runSync() {
+    clearLog();
+    log("Start");
+
+    for (let i = 0; i < 1e8; i++) {} // blocking loop
+
+    log("Synchronous Task Done");
+    log("End");
+  }
+
+  function runAsync() {
+    clearLog();
+    log("Start");
+
+    setTimeout(() => {
+      log("Asynchronous Task Done");
+    }, 2000);
+
+    log("End");
+  }
+</script>
+</body>
+</html>
