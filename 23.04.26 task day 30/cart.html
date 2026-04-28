@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .product {
+      background: white;
+      padding: 15px;
+      margin: 10px auto;
+      width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    button {
+      padding: 8px 12px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    .cart {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+    <h2>Products</h2>
+
+<div class="product">
+  <p>Product 1</p>
+  <button onclick="addToCart('Product 1')">Add to Cart</button>
+</div>
+
+<div class="product">
+  <p>Product 2</p>
+  <button onclick="addToCart('Product 2')">Add to Cart</button>
+</div>
+
+<div class="product">
+  <p>Product 3</p>
+  <button onclick="addToCart('Product 3')">Add to Cart</button>
+</div>
+
+<div class="cart">
+  Cart Count: <span id="cart-count">0</span>
+</div>
+
+<script>
+  let cart = [];
+  let count = 0;
+
+  function addToCart(product) {
+    cart.push(product);
+    count++;
+    document.getElementById("cart-count").textContent = count;
+  }
+</script>
+
+</body>
+</html>
